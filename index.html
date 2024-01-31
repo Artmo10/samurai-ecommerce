@@ -6,15 +6,30 @@
     <title>Samurai</title>
     <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/53ecaf823c.js" crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
 </head>
 <body>
-    <nav>
+    <nav class="nav">
         <div class="nav_container">
             <img src="./assets/logo.png" alt="" class="nav_logo">
             <div class="nav_links">
-                <a href="" class="nav_link">Products</a>
+                <a href="#products" class="nav_link">Products</a>
                 <a href="" class="nav_link"><i class="fa-solid fa-cart-shopping nav_link_icon"></i></a>
             </div>
+            <button class="nav_menu" onclick="openMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <nav class="menu">
+        <button class="menu_close" onclick="closeMenu()">
+            <i class="fa-solid fa-x"></i>
+        </button>
+        <div class="menu_links">
+            <a href="#" class="menu_link" onclick="closeMenu()">Home</a>
+            <a href="#products" class="menu_link" onclick="closeMenu()">Products</a>
+            <a href="#" class="menu_link" onclick="closeMenu()">Cart</a>
         </div>
     </nav>
 
@@ -146,9 +161,9 @@
                             </div>
                         </div>
                         <div class="product">
-                            <img src="./assets/product-img6.jpeg" alt="" class="product_img">
+                            <img src="./assets/product-img8.jpeg" alt="" class="product_img">
                             <div class="product_details">
-                                <h3 class="product_details_title">Alarm Clock</h3>
+                                <h3 class="product_details_title">Speaker Lamp</h3>
                                 <span class="product_details_price">$468</span>
                             </div>
                         </div>
@@ -193,7 +208,17 @@
     </main>
 
     <footer>
-        
+        <div class="footer_container">
+            <div class="footer_links">
+                <a href="#" class="footer_link">About</a>
+                <a href="#" class="footer_link">Store locator</a>
+                <a href="#" class="footer_link">FAQs</a>
+                <a href="#" class="footer_link">News</a>
+                <a href="#" class="footer_link">Careers</a>
+                <a href="#" class="footer_link">Contact Us</a>
+            </div>
+            <span class="footer_credit">Design by Arturo Morales</span>
+        </div>
     </footer>
 </body>
 </html>
