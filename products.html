@@ -6,7 +6,7 @@
     <title>Samurai Products</title>
     <link rel="stylesheet" href="style.css" />
     <script src="index.js"></script>
-    <script src="products.js"></script>
+    <script src="products.js" defer></script>
     <script
       src="https://kit.fontawesome.com/fc0b80239e.js"
       crossorigin="anonymous"
@@ -51,12 +51,12 @@
                 <span class="products__header__link__text"> Home </span>
               </a>
               <h1 class="products__header__title">Products</h1>
-              <select class="products__header__filter">
+              <select class="products__header__filter" onchange="renderProducts()">
                 <option
                   value=""
                   class="products__header__filter__option"
                   selected
-                  disabled
+                  
                 >
                   All
                 </option>
@@ -93,7 +93,7 @@
               </select>
             </div>
             <div class="products__list" id="all-products-list">
-              
+              <i class="fa-solid fa-spinner products__list__spinner"></i>
             </div>
           </div>
         </div>
